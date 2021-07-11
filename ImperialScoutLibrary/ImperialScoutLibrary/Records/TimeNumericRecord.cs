@@ -7,16 +7,17 @@ using System.Threading.Tasks;
 
 namespace ImperialScoutLibrary
 {
-    [DataContract]
-    public class Army
+    /*
+     * Data for a Time Numeric Input to a Scouting Report
+     */
+    public class TimeNumericRecord : NumericRecord
     {
-        #region Army Properties
-        [DataMember(Name = "factions")]
-        public Dictionary<Regiments, Faction> Factions { get; set; }
+        #region TimeNumericRecord Properties
+
         #endregion
 
-        #region Army Methods
-        public Army()
+        #region TimeNumericRecord Methods
+        public TimeNumericRecord()
         {
 
         }

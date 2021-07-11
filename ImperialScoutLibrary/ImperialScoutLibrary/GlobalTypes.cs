@@ -1,7 +1,8 @@
-﻿using System.Runtime.Serialization;
-
-[DataContract]
-public enum Regiments
+﻿
+/*
+ * All of the Driver Stations in a Standard 3v3 Match
+ */
+public enum DriverStation
 {
     Blue1,
     Blue2,
@@ -11,8 +12,10 @@ public enum Regiments
     Red3
 };
 
-[DataContract]
-public enum Campaigns
+/*
+ * The type of round during the Competition.
+ */
+public enum MatchType
 {
     Practice,
     Qualification,
@@ -20,7 +23,9 @@ public enum Campaigns
     RoundRobin
 };
 
-[DataContract]
+/*
+ * The Alliance
+ */
 public enum Alliances
 {
     Red,
